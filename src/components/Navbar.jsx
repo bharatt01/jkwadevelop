@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const mainLinks = [
-  { to: "/", label: "Home" },
+  { to: "/", label: "Homee" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ];
