@@ -150,8 +150,8 @@ export default function ContactPage() {
                 <a href="tel:+61444535933" className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-[#D4A017] transition-colors">
                   <Phone size={16} /> +61 444 535 933
                 </a>
-                <a href="mailto:info@jkwadevelopment.com.au" className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-[#D4A017] transition-colors">
-                  <Mail size={16} /> info@jkwadevelopment.com.au
+                <a href="mailto:jkwadevelop@gmail.com" className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-[#D4A017] transition-colors">
+                  <Mail size={16} /> jkwadevelop@gmail.com
                 </a>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-[11px] uppercase tracking-wider text-black/50 font-medium">Email</p>
-                <a href="mailto:info@jkwadevelopment.com.au" className="text-sm font-semibold text-black hover:text-white transition-colors">info@jkwadevelopment.com.au</a>
+                <a href="mailto:jkwadevelop@gmail.com" className="text-sm font-semibold text-black hover:text-white transition-colors">jkwadevelop@gmail.com</a>
               </div>
             </div>
             <div className="flex items-center gap-4">

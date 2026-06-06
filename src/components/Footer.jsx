@@ -41,9 +41,9 @@ export function Footer() {
                 <Phone size={14} className="text-[#D4A017]" />
                 +61 444 535 933
               </a>
-              <a href="mailto:info@jkwadevelopment.com.au" className="flex items-center gap-3 text-sm text-white/40 hover:text-[#D4A017] transition-colors">
+              <a href="mailto:jkwadevelop@gmail.com" className="flex items-center gap-3 text-sm text-white/40 hover:text-[#D4A017] transition-colors">
                 <Mail size={14} className="text-[#D4A017]" />
-                info@jkwadevelopment.com.au
+                jkwadevelop@gmail.com
               </a>
               <div className="flex items-start gap-3 text-sm text-white/40">
                 <MapPin size={14} className="text-[#D4A017] mt-0.5 shrink-0" />
