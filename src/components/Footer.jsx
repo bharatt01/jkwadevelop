@@ -39,7 +39,7 @@ export function Footer() {
             <div className="mt-6 space-y-3">
               <a href="tel:08XXXXXXXX" className="flex items-center gap-3 text-sm text-white/40 hover:text-[#D4A017] transition-colors">
                 <Phone size={14} className="text-[#D4A017]" />
-                08 XX XX XX
+                +61 444 535 933
               </a>
               <a href="mailto:info@jkwadevelopment.com.au" className="flex items-center gap-3 text-sm text-white/40 hover:text-[#D4A017] transition-colors">
                 <Mail size={14} className="text-[#D4A017]" />

@@ -113,7 +113,7 @@ export default function ContactPage() {
     } catch (error) {
       console.error("Submit error:", error);
       setLoading(false);
-      showToast("Something went wrong. Please try again or call us at 08 XX XX XX.", "error");
+      showToast("Something went wrong. Please try again or call us at +61 444 535 933 .", "error");
     }
   };
 
@@ -147,8 +147,8 @@ export default function ContactPage() {
                 Free, no-obligation consultation and quote. Contact the JK WA Development team today and let&apos;s turn your vision into the home you&apos;ve always wanted.
               </p>
               <div className="reveal flex flex-wrap gap-4">
-                <a href="tel:08XXXXXXXX" className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-[#D4A017] transition-colors">
-                  <Phone size={16} /> 08 XX XX XX
+                <a href="tel:+61444535933" className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-[#D4A017] transition-colors">
+                  <Phone size={16} /> +61 444 535 933
                 </a>
                 <a href="mailto:info@jkwadevelopment.com.au" className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-[#D4A017] transition-colors">
                   <Mail size={16} /> info@jkwadevelopment.com.au
@@ -169,7 +169,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-[11px] uppercase tracking-wider text-black/50 font-medium">Phone</p>
-                <a href="tel:08XXXXXXXX" className="text-sm font-semibold text-black hover:text-white transition-colors">08 XX XX XX</a>
+                <a href="tel:+61444535933" className="text-sm font-semibold text-black hover:text-white transition-colors">+61 444 535 933</a>
               </div>
             </div>
             <div className="flex items-center gap-4">

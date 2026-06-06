@@ -54,8 +54,8 @@ export default function SingleStoreyPage() {
               <Link to="/contact" className="inline-flex items-center gap-2 bg-[#D4A017] text-black px-6 py-3 text-[14px] font-semibold hover:bg-white transition-colors">
                 Get a Free Quote <ArrowRight size={15} />
               </Link>
-              <a href="tel:08XXXXXXXX" className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 text-[14px] font-medium hover:bg-white/10 transition-colors">
-                <Phone size={15} /> 08 XX XX XX
+              <a href="tel:+61444535933" className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 text-[14px] font-medium hover:bg-white/10 transition-colors">
+                <Phone size={15} /> +61 444 535 933
               </a>
             </div>
           </div>

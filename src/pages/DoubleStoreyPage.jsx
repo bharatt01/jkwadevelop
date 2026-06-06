@@ -43,8 +43,8 @@ export default function DoubleStoreyPage() {
             <Link to="/contact" className="inline-flex items-center gap-2 bg-[#D4A017] text-black px-6 py-3 text-[13px] font-semibold hover:bg-white transition-colors">
               Get a Free Quote <ArrowRight size={14} />
             </Link>
-            <a href="tel:08XXXXXXXX" className="inline-flex items-center gap-2 text-white/60 text-[13px] font-medium hover:text-white transition-colors">
-              <Phone size={14} /> 08 XX XX XX
+            <a href="tel:+61444535933" className="inline-flex items-center gap-2 text-white/60 text-[13px] font-medium hover:text-white transition-colors">
+              <Phone size={14} /> +61 444 535 933
             </a>
           </div>
         </div>
