@@ -175,23 +175,48 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════
           STATS — Full width, asymmetric
           ═══════════════════════════════════════ */}
-      <section className="bg-black">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-white/10">
-            {stats.map((stat, i) => (
-              <div 
-                key={stat.label} 
-                className={`reveal py-10 sm:py-14 px-4 ${i < stats.length - 1 ? "border-r border-white/10" : ""} ${i === 0 || i === 1 ? "border-b lg:border-b-0 border-white/10" : ""}`}
-                style={{ transitionDelay: `${i * 100}ms` }}
-              >
-                <p className="text-[40px] sm:text-[56px] font-semibold text-[#D4A017] leading-none mb-2">{stat.value}</p>
-                <p className="text-[11px] uppercase tracking-[0.2em] text-white/30 font-medium">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     {/* ═══════════════════════════════════════
+    TRUST BAR — Compact, mobile-safe
+    ═══════════════════════════════════════ */}
+<section className="bg-black border-t-4 border-[#D4A017]">
+  <div className="max-w-7xl mx-auto px-6 lg:px-10 py-10 sm:py-14">
+    <div className="flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-12 lg:gap-20">
+      
+      {/* Left — Bold statement */}
+      <div className="reveal shrink-0">
+        <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-semibold text-white leading-[1] tracking-tight">
+          No hidden costs.<br className="hidden sm:block" />
+          <span className="text-[#D4A017]"> Ever.</span>
+        </h2>
+      </div>
 
+      {/* Divider — hidden on mobile */}
+      <div className="hidden sm:block w-px h-14 bg-white/10 shrink-0" />
+
+      {/* Right — Three micro points */}
+      <div className="reveal flex flex-col sm:flex-row gap-5 sm:gap-8 lg:gap-12">
+        {[
+          { label: "All-Inclusive", sub: "Quote to handover" },
+          { label: "Full Approvals", sub: "We handle everything" },
+          { label: "Fixed Price", sub: "No variations" }
+        ].map((item) => (
+          <div key={item.label} className="group flex items-center gap-3 sm:block">
+            <div className="w-1.5 h-1.5 bg-[#D4A017] sm:hidden shrink-0" />
+            <div>
+              <p className="text-[14px] font-semibold text-white tracking-tight group-hover:text-[#D4A017] transition-colors duration-200">
+                {item.label}
+              </p>
+              <p className="text-[12px] text-white/30 mt-0.5 hidden sm:block">
+                {item.sub}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ═══════════════════════════════════════
           HOME TYPES — Asymmetric layout
           ═══════════════════════════════════════ */}
@@ -529,7 +554,7 @@ export default function HomePage() {
               <ArrowRight size={15} />
             </Link>
             <a
-              href="tel:08XXXXXXXX"
+              href="tel:+61812345678"
               className="inline-flex items-center justify-center gap-2 border-2 border-black text-black px-8 py-4 text-[14px] font-medium hover:bg-black hover:text-white transition-all duration-200"
             >
               <Phone size={15} strokeWidth={1.5} />
