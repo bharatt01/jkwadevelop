@@ -166,54 +166,31 @@ export default function HomePage() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-          <span className="text-[10px] uppercase tracking-[0.3em] text-white/30">Scroll</span>
-          <ChevronDown size={18} className="text-white/30 animate-bounce" />
-        </div>
+      
       </section>
 
       {/* ═══════════════════════════════════════
           STATS — Full width, asymmetric
           ═══════════════════════════════════════ */}
      {/* ═══════════════════════════════════════
-    TRUST BAR — Compact, mobile-safe
+    LAND STRIP — Compact typographic punch
     ═══════════════════════════════════════ */}
-<section className="bg-black border-t-4 border-[#D4A017]">
-  <div className="max-w-7xl mx-auto px-6 lg:px-10 py-10 sm:py-14">
-    <div className="flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-12 lg:gap-20">
+<section className="bg-[#D4A017]">
+  <div className="max-w-7xl mx-auto px-6 lg:px-10 py-8 sm:py-10">
+    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       
-      {/* Left — Bold statement */}
-      <div className="reveal shrink-0">
-        <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-semibold text-white leading-[1] tracking-tight">
-          No hidden costs.<br className="hidden sm:block" />
-          <span className="text-[#D4A017]"> Ever.</span>
-        </h2>
-      </div>
-
-      {/* Divider — hidden on mobile */}
-      <div className="hidden sm:block w-px h-14 bg-white/10 shrink-0" />
-
-      {/* Right — Three micro points */}
-      <div className="reveal flex flex-col sm:flex-row gap-5 sm:gap-8 lg:gap-12">
-        {[
-          { label: "All-Inclusive", sub: "Quote to handover" },
-          { label: "Full Approvals", sub: "We handle everything" },
-          { label: "Fixed Price", sub: "No variations" }
-        ].map((item) => (
-          <div key={item.label} className="group flex items-center gap-3 sm:block">
-            <div className="w-1.5 h-1.5 bg-[#D4A017] sm:hidden shrink-0" />
-            <div>
-              <p className="text-[14px] font-semibold text-white tracking-tight group-hover:text-[#D4A017] transition-colors duration-200">
-                {item.label}
-              </p>
-              <p className="text-[12px] text-white/30 mt-0.5 hidden sm:block">
-                {item.sub}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-
+      <p className="text-[18px] sm:text-[22px] md:text-[26px] font-semibold text-black leading-tight tracking-tight">
+        Own land in the southern suburbs?
+      </p>
+      
+      <Link
+        to="/contact"
+        className="shrink-0 inline-flex items-center gap-2 bg-black text-white px-5 py-2.5 text-[12px] font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-200"
+      >
+        Let's talk
+        <ArrowRight size={13} />
+      </Link>
+      
     </div>
   </div>
 </section>
